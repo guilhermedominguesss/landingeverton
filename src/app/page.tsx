@@ -151,7 +151,7 @@ export function PainSection() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.5 }}
               viewport={{ once: true }}
-              className="text-[#1E3A8A]/30 text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans block mb-6"
+              className="text-[#1E3A8A] text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans font-medium block mb-6"
             >
               01 — Percepção
             </motion.span>
@@ -164,7 +164,7 @@ export function PainSection() {
               className="text-[#0F1B3D] text-4xl md:text-6xl lg:text-7xl font-serif font-light leading-[1.08] tracking-tight mb-8"
             >
               Você funciona bem<br />
-              <span className="italic text-[#1E3A8A]/50">para o mundo.</span>
+              <span className="italic text-[#1E3A8A]">para o mundo.</span>
             </motion.h2>
 
             <motion.p
@@ -172,7 +172,7 @@ export function PainSection() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
               viewport={{ once: true }}
-              className="text-[#0F1B3D]/35 text-lg md:text-xl font-sans font-light leading-relaxed max-w-md"
+              className="text-[#0F1B3D]/85 text-lg md:text-xl font-sans leading-relaxed max-w-md"
             >
               As metas estão lá. Os resultados aparecem. De fora, tudo funciona.
             </motion.p>
@@ -203,7 +203,7 @@ export function PainSection() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2 }}
                 viewport={{ once: true }}
-                className="text-[#8B6F30]/40 text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans block mb-6"
+                className="text-[#8B6F30] text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans font-medium block mb-6"
               >
                 02 — Desconforto
               </motion.span>
@@ -224,7 +224,7 @@ export function PainSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
                 viewport={{ once: true }}
-                className="text-[#0F1B3D]/45 text-lg md:text-xl font-serif font-light italic leading-relaxed"
+                className="text-[#0F1B3D]/85 text-lg md:text-xl font-serif italic leading-relaxed"
               >
                 O ruído que não para. O vazio que o sucesso não preenche.
               </motion.p>
@@ -306,7 +306,7 @@ export function PainSection() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.2 }}
                 viewport={{ once: true }}
-                className="text-[#1E3A8A]/30 text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans block mb-8"
+                className="text-[#1E3A8A] text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans font-medium block mb-8"
               >
                 03 — Modo Automático
               </motion.span>
@@ -320,7 +320,7 @@ export function PainSection() {
               >
                 O mesmo ciclo.<br />
                 As mesmas respostas.<br />
-                <span className="text-[#1E3A8A]/70 italic font-light">O mesmo lugar.</span>
+                <span className="text-[#1E3A8A] italic">O mesmo lugar.</span>
               </motion.h2>
 
               <div className="space-y-5 mb-10">
@@ -515,9 +515,6 @@ export function PainSection() {
           </div>
         </div>
       </div>
-
-      {/* Bottom gradient transition */}
-      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#111827] to-transparent pointer-events-none z-20" />
     </section>
   );
 }
