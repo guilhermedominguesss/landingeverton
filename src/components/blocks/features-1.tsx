@@ -12,13 +12,13 @@ export function Features() {
                             O método
                         </p>
                         <h2 className="text-balance text-3xl font-serif font-black text-[#0F1B3D] uppercase leading-tight lg:text-5xl">
-                            Volta Pra Casa
+                            De Volta Pra Casa
                         </h2>
                     </div>
 
                     <div className="mt-6 space-y-4 text-left max-w-2xl mx-auto">
                         <p className="text-[#0F1B3D]/80 font-sans font-light text-base md:text-lg leading-relaxed">
-                            Foi exatamente ao perceber isso que eu criei o método <strong className="text-[#0F1B3D] font-medium">Volta Pra Casa</strong>.
+                            Foi exatamente ao perceber isso que eu criei o método <strong className="text-[#0F1B3D] font-medium">De Volta Pra Casa</strong>.
                         </p>
                         <p className="text-[#0F1B3D]/70 font-sans font-light text-base md:text-lg leading-relaxed">
                             Depois de acompanhar muitos processos de transformação, ficou claro para mim que o verdadeiro problema quase nunca está nas metas ou nas decisões que você tenta tomar.
@@ -27,7 +27,7 @@ export function Features() {
                             Ele está na raiz que está conduzindo sua vida.
                         </p>
                         <p className="text-[#0F1B3D]/70 font-sans font-light text-base md:text-lg leading-relaxed">
-                            O método Volta Pra Casa é um processo profundo de reconexão com quem você realmente é — trazendo consciência sobre suas crenças, seus valores e sobre a identidade que você quer viver.
+                            O método De Volta Pra Casa é um processo profundo de reconexão com quem você realmente é — trazendo consciência sobre suas crenças, seus valores e sobre a identidade que você quer viver.
                         </p>
                         <p className="text-[#0F1B3D]/80 font-sans font-medium text-base md:text-lg leading-relaxed">
                             Quando isso se reorganiza dentro de você, a vida muda de direção.

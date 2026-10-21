@@ -325,10 +325,16 @@ export function PainSection() {
 
               <div className="space-y-5 mb-10">
                 {[
-                  { text: "Você tenta mudar — mas o padrão se repete.", delay: 0.3 },
-                  { text: "O medo disfarçado de prudência paralisa.", delay: 0.6 },
-                  { text: "O peso de sustentar quem você não é.", delay: 0.9 },
-                  { text: "O piloto automático que governa suas escolhas.", delay: 1.2 },
+                  { text: "Você sente que poderia estar vivendo muito mais.", delay: 0.3 },
+                  { text: "Mais dinheiro. Mais liberdade. Mais realização. Mais vida.", delay: 0.45 },
+                  { text: "E o pior é que você sabe que capacidade não te falta.", delay: 0.6 },
+                  { text: "Você trabalha, se esforça, tenta mudar, busca conhecimento… mas alguma coisa parece sempre colocar você de volta no mesmo lugar.", delay: 0.75 },
+                  { text: "Você começa a se perguntar se o problema é você.", delay: 0.9 },
+                  { text: "Se está fazendo alguma coisa errada.", delay: 1.05 },
+                  { text: "Se talvez não seja tão boa quanto imaginava.", delay: 1.2 },
+                  { text: "E é aí que você começa a se diminuir.", delay: 1.35 },
+                  { text: "Só que talvez você não esteja precisando fazer mais.", delay: 1.5 },
+                  { text: "Talvez precise descobrir o que, dentro de você, ainda está dizendo não para tudo aquilo que você diz querer.", delay: 1.65 },
                 ].map((item, i) => (
                   <motion.p
                     key={i}
@@ -336,7 +342,7 @@ export function PainSection() {
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: item.delay, ease: [0.25, 0.1, 0.25, 1] }}
                     viewport={{ once: true, amount: 0.5 }}
-                    className="text-[#0F1B3D]/45 text-lg md:text-2xl font-serif font-light italic leading-relaxed"
+                    className="text-[#0F1B3D]/80 text-lg md:text-2xl font-serif italic leading-relaxed"
                   >
                     {item.text}
                   </motion.p>
@@ -346,9 +352,9 @@ export function PainSection() {
               <motion.p
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
-                transition={{ duration: 1.5, delay: 1.8 }}
+                transition={{ duration: 1.5, delay: 2.1 }}
                 viewport={{ once: true }}
-                className="text-[#0F1B3D]/25 text-sm md:text-base font-sans font-light tracking-wide"
+                className="text-black text-base md:text-lg font-sans font-medium tracking-wide"
               >
                 Você reconhece esse ciclo?
               </motion.p>
@@ -379,9 +385,9 @@ export function PainSection() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              className="text-[#8B6F30]/50 text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans block mb-6"
+              className="text-[#8B6F30] text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans font-medium block mb-6"
             >
-              04 — Ruptura
+              04 — Despertar
             </motion.span>
 
             <motion.h2
@@ -399,10 +405,16 @@ export function PainSection() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 1, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
               viewport={{ once: true }}
-              className="text-[#0F1B3D]/55 text-xl md:text-2xl font-serif font-light leading-relaxed mb-4"
+              className="text-[#0F1B3D]/85 text-xl md:text-2xl font-serif leading-relaxed space-y-4 mb-6"
             >
-              O desalinhamento cobra um preço alto demais.<br />
-              <span className="font-medium text-[#0F1B3D]/70">Você sabe disso.</span>
+              <span className="block">Você já percebeu que a vida que está vivendo não acompanha quem você se tornou.</span>
+              <span className="block font-semibold text-[#0F1B3D]">Você sente que pode mais. Quer mais.</span>
+              <span className="block">Mas continua repetindo escolhas que te levam para o mesmo lugar.</span>
+              <span className="block">
+                Não é falta de vontade.<br />
+                Existe algo que você ainda não enxergou.<br />
+                E enquanto permanecer invisível, continuará decidindo por você.
+              </span>
             </motion.p>
 
             <motion.p
@@ -410,9 +422,9 @@ export function PainSection() {
               whileInView={{ opacity: 1 }}
               transition={{ duration: 1, delay: 0.7 }}
               viewport={{ once: true }}
-              className="text-[#0F1B3D]/30 text-base md:text-lg font-sans font-light"
+              className="text-[#0F1B3D] text-lg md:text-xl font-sans font-semibold"
             >
-              Algo dentro de você já decidiu. Falta só ouvir.
+              O que você não enxerga, continua escolhendo por você.
             </motion.p>
           </div>
         </div>
@@ -442,9 +454,9 @@ export function PainSection() {
                 whileInView={{ opacity: 1 }}
                 transition={{ duration: 1.5 }}
                 viewport={{ once: true }}
-                className="text-[#8B6F30]/35 text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans block mb-6"
+                className="text-[#8B6F30] text-[10px] md:text-xs tracking-[0.35em] uppercase font-sans font-medium block mb-6"
               >
-                05 — Clareza
+                05 — Liberdade
               </motion.span>
 
               <motion.h2
@@ -452,25 +464,26 @@ export function PainSection() {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1.4, ease: [0.25, 0.1, 0.25, 1] }}
                 viewport={{ once: true }}
-                className="text-[#0F1B3D] text-3xl md:text-5xl lg:text-6xl font-serif font-light leading-[1.12] tracking-tight mb-8"
+                className="text-[#0F1B3D] text-3xl md:text-5xl lg:text-6xl font-serif font-medium leading-[1.12] tracking-tight mb-8"
               >
-                E se o problema não fosse{" "}
-                <span className="italic text-[#0F1B3D]/50">falta de força</span>
-                <br />
-                — mas falta de{" "}
-                <span className="text-[#8B6F30] font-medium">clareza?</span>
+                Talvez seja o momento de escolher a sua{" "}
+                <span className="text-[#8B6F30] font-semibold">liberdade.</span>
               </motion.h2>
 
-              <motion.p
+              <motion.div
                 initial={{ opacity: 0, y: 15 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1, delay: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
                 viewport={{ once: true }}
-                className="text-[#0F1B3D]/35 text-lg md:text-xl font-sans font-light leading-relaxed mb-12"
+                className="text-[#0F1B3D]/85 text-lg md:text-xl font-sans leading-relaxed space-y-4 mb-10"
               >
-                Você não precisa de mais motivação.<br />
-                Precisa reconectar com quem você realmente é.
-              </motion.p>
+                <p>Talvez você tenha passado anos tentando, lutando, se corrigindo, se controlando, fazendo dar certo.</p>
+                <p>E, no caminho, foi se afastando de quem você é.</p>
+                <p>Sua autenticidade foi ficando em silêncio. Sua verdade, cada vez mais distante.</p>
+                <p className="font-semibold text-[#0F1B3D]">Mas isso muda hoje.</p>
+                <p>Você está no lugar certo.<br />E talvez, pela primeira vez em muito tempo, seja hora de se escolher.</p>
+                <p className="font-semibold text-[#0F1B3D]">Clique e agende sua Sessão Diagnóstico.</p>
+              </motion.div>
 
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -483,10 +496,21 @@ export function PainSection() {
                   <ParticleButton
                     className="bg-[#22c55e] hover:bg-[#16a34a] text-white px-10 py-6 text-lg rounded-full shadow-lg shadow-green-600/15"
                   >
-                    Quero recuperar minha clareza
+                    Agendar minha Sessão Diagnóstico
                   </ParticleButton>
                 </a>
               </motion.div>
+
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                transition={{ duration: 1.2, delay: 1.1 }}
+                viewport={{ once: true }}
+                className="text-[#0F1B3D] text-xl md:text-2xl font-serif italic leading-relaxed mt-10"
+              >
+                Porque você é única.<br />
+                Só esqueceu disso.
+              </motion.p>
             </div>
           </div>
         </div>
@@ -1099,12 +1123,18 @@ export function AuthoritySection() {
               </svg>
             </div>
 
-            <p className="text-[#1E3A8A] font-serif italic text-xl mb-8">Especialista em Comportamento Humano e Quebra de Crenças.</p>
+            <p className="text-[#1E3A8A] font-serif italic text-xl mb-8">Especialista em Crenças, Valores e Desenvolvimento.</p>
 
             <div className="space-y-5 text-[#6B7280] text-base md:text-lg font-sans font-light leading-relaxed mb-12">
               <p>Se você chegou até aqui, talvez esteja procurando mais do que respostas.<br/>Talvez esteja procurando clareza.</p>
-              <p>Eu sou Everton Ferrari, trainer em Programação Neurolinguística (PNL), especialista em crenças e valores humanos, mentor de transição de carreira e negócios e criador da técnica <strong className="text-[#0F1B3D] font-medium">Volta Pra Casa</strong>.</p>
-              <p><strong className="text-[#0F1B3D] font-medium">Meu trabalho não é motivar pessoas.</strong><br/>É ajudá-las a enxergar com clareza os padrões invisíveis que influenciam suas escolhas e conduzi-las de volta ao lugar onde identidade, valores e decisões caminham na mesma direção.</p>
+              <p>Eu sou Everton Ferrari, trainer em Programação Neurolinguística (PNL), especialista em crenças e valores, mentor de transição de carreira e negócios e criador da técnica <strong className="text-[#0F1B3D] font-medium">De Volta Pra Casa</strong>.</p>
+              <p><strong className="text-[#0F1B3D] font-medium">Você sabe que pode mais.</strong> Mas, por algum motivo, sua vida ainda não acompanha todo o potencial que você sente que existe em você.</p>
+              <p>Você começa, trava. Decide, recua. Conquista, mas não sente.<br/>E, às vezes, nem consegue entender por que continua repetindo aquilo que, no fundo, já sabe que precisa mudar.</p>
+              <p>Não é falta de capacidade. Não é falta de vontade. Existe algo por trás disso.</p>
+              <p>No meu trabalho, eu vou até a raiz: identifico as crenças e padrões que comandam suas escolhas no automático e transformo aquilo que limita sua potência.</p>
+              <p>Porque quando você muda o que sustenta o comportamento, o comportamento muda.<br/>E é aí que você para de lutar contra si mesma e começa a agir em coerência com quem realmente é.</p>
+              <p>Você não precisa se tornar mais. Precisa parar de viver abaixo de tudo o que já existe em você.</p>
+              <p><strong className="text-[#0F1B3D] font-medium">Descubra o que está limitando a sua potencialidade. E rompa esse limite.</strong></p>
               <p>Ao longo de mais de 500 horas conduzindo processos de transformação humana, tenho acompanhado pessoas que já conquistaram muito por fora, mas sabem que existe algo dentro delas pedindo mais verdade, mais alinhamento e mais sentido.</p>
               <p className="text-[#0F1B3D] font-medium italic">Você não está travado. Está confortável.</p>
             </div>
@@ -1125,7 +1155,7 @@ export function AuthoritySection() {
                 <p className="text-xs uppercase tracking-widest text-[#9CA3AF]">Experiência</p>
               </div>
               <div>
-                <p className="text-4xl font-serif text-[#1E3A8A] mb-1">Puro PNL</p>
+                <p className="text-4xl font-serif text-[#1E3A8A] mb-1">PNL Sistêmica</p>
                 <p className="text-xs uppercase tracking-widest text-[#9CA3AF]">Metodologia</p>
               </div>
             </div>
